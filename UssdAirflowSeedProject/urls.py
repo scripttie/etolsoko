@@ -18,6 +18,6 @@ from django.contrib import admin
 from register_app import views as UssdView
 
 urlpatterns = [
-    url(r'^admin/', include(admin.site.urls)),
-    url(r'^ussd/', UssdView.AfricasTalkingUssdGateway.as_view())
+    url(r'^$admin/', include(admin.site.urls)),
+    url(r'^$ussd/', UssdView.AfricasTalkingUssdGateway.as_view())
 ]
